@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Register</title>
+    <link rel="stylesheet" href="stylesregistro.css">
+</head>
+
+<body class="container">
+    <div class="back-button">
+        <a href="index.php">
+            <img src="assets/regreso.png" alt="regresar" class="back-arrow">
+        </a>
+    </div>
+    <div class="form-container">
+        <div class="form-box">
+            <form action="register.php" method="POST">
+                <div class="label">Name</div>
+                <div class="input-group">
+                    <input 
+                      class="input-field"
+                      type="text"
+                      name="nombre" 
+                      required
+                    />
+                </div>
+
+                <div class="label">Last Name</div>
+                <div class="input-group">
+                    <input
+                      class="input-field"
+                      type="text"
+                      name="apellido" 
+                      required
+                    />
+                </div>
+
+                <div class="label">Email</div>
+                <div class="input-group">
+                    <input
+                      class="input-field"
+                      type="email"
+                      name="correo"
+                      required
+                    />
+                </div>
+
+                <div class="label">User</div>
+                <div class="input-group">
+                    <input
+                      class="input-field"
+                      type="text"
+                      name="usuario" 
+                      required
+                    />
+                </div>
+
+                <div class="label">Create Password (up to 8 characters)</div>
+                <div class="input-group">
+                    <input
+                        class="input-field"
+                        type="password"
+                        name="contrasena" 
+                        minlength="1" 
+                        maxlength="8" 
+                        required
+                    />
+                </div>
+
+                <div class="submit-button">
+                    <button type="submit" class="btn">
+                        Register
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
